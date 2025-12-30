@@ -2,10 +2,6 @@
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 
--- Buffer navigation
-vim.keymap.set("n", "<leader>n", ":bnext<CR>", { desc = "Next buffer" })
-vim.keymap.set("n", "<leader>p", ":bprev<CR>", { desc = "Previous buffer" })
-
 -- Window splitting
 vim.keymap.set("n", "<leader>v", ":vsplit<CR>", { desc = "Vertical split" })
 vim.keymap.set("n", "<leader>h", ":split<CR>", { desc = "Horizontal split" })
