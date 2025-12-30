@@ -13,6 +13,9 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = false
 
+-- Clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- UI
 vim.opt.mouse = "a"
 vim.opt.termguicolors = true
@@ -56,4 +59,15 @@ vim.diagnostic.config({
     spacing = 4,
     prefix = "●",
   },
+})
+
+-- Flash/highlight yanked text
+vim.api.nvim_create_autocmd("TextYankPost", {
+  group = vim.api.nvim_create_augroup("YankHighlight", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank({
+      higroup = "IncSearch", -- good default; change if you want
+      timeout = 150, -- ms
+    })
+  end,
 })
