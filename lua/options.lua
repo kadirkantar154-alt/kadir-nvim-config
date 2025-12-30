@@ -27,20 +27,22 @@ vim.opt.showmode = false -- Don't show mode in command line (lualine shows it)
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
 
+-- NOTE: This option enables showing warnings as text
+
 -- Diagnostic configuration
-vim.diagnostic.config({
-  virtual_text = true, -- Show diagnostics as virtual text
-  signs = true, -- Show signs in sign column
-  update_in_insert = false,
-  underline = true,
-  severity_sort = true,
-  float = {
-    border = "rounded",
-    source = "always",
-    header = "",
-    prefix = "",
-  },
-})
+-- vim.diagnostic.config({
+--   virtual_text = true, -- Show diagnostics as virtual text
+--   signs = true, -- Show signs in sign column
+--   update_in_insert = false,
+--   underline = true,
+--   severity_sort = true,
+--   float = {
+--     border = "rounded",
+--     source = "always",
+--     header = "",
+--     prefix = "",
+--   },
+-- })
 
 -- Customize diagnostic signs
 vim.diagnostic.config({
@@ -55,10 +57,12 @@ vim.diagnostic.config({
   underline = true,
   update_in_insert = false,
   severity_sort = true,
-  virtual_text = {
-    spacing = 4,
-    prefix = "●",
-  },
+  -- NOTE: Uncomment This For Showing Diagnostics as text
+
+  -- virtual_text = {
+  --   spacing = 4,
+  --   prefix = "●",
+  -- },
 })
 
 -- Flash/highlight yanked text
