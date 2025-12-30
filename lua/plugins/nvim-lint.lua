@@ -4,6 +4,13 @@ return {
   config = function()
     local lint = require("lint")
 
+    local clangtidy = lint.linters.clangtidy
+    clangtidy.args = {
+      "-p",
+      "build", -- use build/compile_commands.json
+      "--quiet",
+    }
+
     lint.linters_by_ft = {
       python = { "ruff" },
       c = { "clangtidy" },
