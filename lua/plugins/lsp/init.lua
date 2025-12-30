@@ -27,6 +27,8 @@ return {
           "clang-format",
           "black",
           "isort",
+          "ruff",
+          "luacheck",
         },
         run_on_start = true,
       })

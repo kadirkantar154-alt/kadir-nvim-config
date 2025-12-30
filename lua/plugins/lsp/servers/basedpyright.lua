@@ -24,6 +24,10 @@ M.setup = function(capabilities)
           -- Optional: keep this low-noise
           reportUnusedImport = "warning",
         },
+        python = {
+          venvPath = "/path/to/venv",
+          venv = "venv",
+        },
       },
     },
   })

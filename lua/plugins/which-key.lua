@@ -13,11 +13,13 @@ return {
       wk.add({
 
         { "<leader>f", group = "Find" },
-        { "<leader>g", group = "Git" },
         { "<leader>t", group = "Terminal" },
         { "<leader>s", group = "Session" },
         { "<leader>c", group = "Code" },
         { "<leader>x", group = "Trouble/Diagnostics" },
+        { "<leader>g", group = "Git" },
+        { "<leader>gh", group = "Git Hunks" },
+        { "<leader>l", group = "Lint" },
       }),
     })
   end,

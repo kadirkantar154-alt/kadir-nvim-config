@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>p", ":bprev<CR>", { desc = "Previous buffer" })
 
 -- Window splitting
 vim.keymap.set("n", "<leader>v", ":vsplit<CR>", { desc = "Vertical split" })
-vim.keymap.set("n", "<leader>s", ":split<CR>", { desc = "Horizontal split" })
+vim.keymap.set("n", "<leader>h", ":split<CR>", { desc = "Horizontal split" })
 
 -- Window navigation with Ctrl+hjkl
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
