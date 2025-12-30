@@ -7,7 +7,15 @@
 *.swo
 *.swn
 *~
-**/*.identifier
+# file named exactly ".identifier"
+**/.Identifier
+
+# files ending with .identifier
+**/*.Identifier
+
+# files containing identifier in name
+**/*Identifier*
+
 .undo/
 .backup/
 .shada
