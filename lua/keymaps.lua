@@ -1,3 +1,15 @@
+-- Disable arrow keys in all main modes
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set({ "n", "i", "v", "x" }, "<Up>", "<Nop>", opts)
+vim.keymap.set({ "n", "i", "v", "x" }, "<Down>", "<Nop>", opts)
+vim.keymap.set({ "n", "i", "v", "x" }, "<Left>", "<Nop>", opts)
+vim.keymap.set({ "n", "i", "v", "x" }, "<Right>", "<Nop>", opts)
+
+-- Fast escape from insert mode
+vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
+vim.keymap.set("i", "jk", "<Esc>", { noremap = true })
+
 -- File operations
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
