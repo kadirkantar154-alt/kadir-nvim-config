@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+
+# Neovim runtime cache (do NOT commit)
+.swap
+*.swp
+*.swo
+*.swn
+*~
+.undo/
+.backup/
+.shada
+
+# Plugin managers
+lazy-lock.json
+
+# Mason binaries
+mason/
+
+# LSP / cache
+.lsp/
+.cache/
+
