@@ -9,24 +9,26 @@ return {
     local wk = require("which-key")
     wk.setup({})
 
-    -- Register groups
     wk.add({
-      -- Existing groups
       { "<leader>f", group = "Find" },
       { "<leader>t", group = "Terminal" },
-      { "<leader>s", group = "Session/Search" }, -- Updated to include Search
+      { "<leader>s", group = "Session/Search" },
       { "<leader>c", group = "Code" },
-      { "<leader>x", group = "Trouble/Diagnostics" },
+      { "<leader>x", group = "Diagnostics/Quickfix" },
       { "<leader>g", group = "Git" },
       { "<leader>gh", group = "Git Hunks" },
       { "<leader>gt", group = "Git Toggle" },
       { "<leader>l", group = "Lint" },
 
-      -- NEW groups for new plugins
       { "<leader>b", group = "Buffer" },
       { "<leader>bm", group = "Buffer Move" },
       { "<leader>n", group = "Noice" },
       { "<leader>u", group = "UI/Notifications" },
+
+      { "<leader>gd", group = "Git Diffview" },
+      { "<leader>a", group = "Aerial (Code Outline)" },
+
+      { "<leader>xl", group = "Location List" },
     })
   end,
 }
